@@ -13,7 +13,7 @@ CREATE TABLE fact_sales (
     markdown2 NUMERIC,
     markdown3 NUMERIC,
     markdown4 NUMERIC,
-    markdown5 NUMERIC,
+    markdown5 NUMERIC
 );
 
 CREATE TABLE dim_store (
