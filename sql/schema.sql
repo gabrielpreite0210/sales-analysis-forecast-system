@@ -2,22 +2,24 @@ CREATE TABLE fact_sales (
     sales_id SERIAL PRIMARY KEY,
     date_id DATE,
     store_id INT,
-    product_id INT,
-    units_sold INT,
-    sales_amount NUMERIC(10,2)
+    dept_id INT,
+    weekly_sales NUMERIC(10,2),
+    is_holiday BOOLEAN,
+    temperature NUMERIC,
+    fuel_price NUMERIC,
+    cpi NUMERIC,
+    unemployment NUMERIC,
+    markdown1 NUMERIC,
+    markdown2 NUMERIC,
+    markdown3 NUMERIC,
+    markdown4 NUMERIC,
+    markdown5 NUMERIC,
 );
 
-CREATE TABLE dim_product (
-    product_id INT PRIMARY KEY,
-    product_name VARCHAR(100),
-    category VARCHAR(50),
-    subcategory VARCHAR(50)
-);
-
-CREATE TABLE dim_store(
+CREATE TABLE dim_store (
     store_id INT PRIMARY KEY,
-    region VARCHAR(50),
-    store_type VARCHAR(50)
+    store_type VARCHAR(10),
+    size INT
 );
 
 CREATE TABLE dim_date (
@@ -42,8 +44,3 @@ ALTER TABLE fact_sales
 ADD CONSTRAINT fk_store
 FOREIGN KEY (store_id)
 REFERENCES dim_store(store_id);
-
-ALTER TABLE fact_sales
-ADD CONSTRAINT fk_product
-FOREIGN KEY (product_id)
-REFERENCES dim_product(product_id);
