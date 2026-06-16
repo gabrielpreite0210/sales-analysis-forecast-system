@@ -343,9 +343,9 @@ WHERE markdown3 < 0;
 
 -- (Not possible promo vs no promo (0/Nan -> not 'no promo' but missing data)
 -- ---------------------------------------------------------------------------
--- 4.4 -- Total Markdown Intensity èer Class Effect
+-- 4.4 -- Total Markdown Intensity per Class Effect
 -- ---------------------------------------------------------------------------
--- Rationale: Rather than analysing each markdown in isolation,
+-- Rather than analysing each markdown in isolation,
 -- total markdown intensity (sum of all 5 channels) provides a
 -- complete measure of total promotional investment per week.
 --
