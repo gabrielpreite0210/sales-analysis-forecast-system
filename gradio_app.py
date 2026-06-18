@@ -22,8 +22,26 @@ def forecast(periods):
 
 # Gradio Interface
 with gr.Blocks() as app:
-    gr.Markdown("Total Weekly Sales Forecast")
-    gr.Markdown("Enter the number of weeks to forecast and click 'Submit' to see the forecast results and plot.")
+    gr.Markdown("""
+    <div style="text-align: center;">
+        <h1>📈 Walmart Weekly Sales Forecasting</h1>
+        <h3>Enter the number of weeks to forecast and click 'Submit' to see the results and plot</h3>
+        <p>📊 Historical trends • 📅 Weekly forecasts</p>
+    </div>
+
+    ---
+
+    ### Forecast Output Guide
+
+    - **ds** → Forecast date (week ending date)
+    - **yhat** → Predicted weekly sales
+
+    💡 Sales values are reported in **US dollars**.
+
+    Example:
+
+    - `47,932,082` = approximately **$47.9 million** in weekly sales.
+    """)
 
     with gr.Row():
         periods= gr.Slider(1, 52, value=12, step=1, label='Weeks to forecast') # maximum 52 weeks (1 year)
