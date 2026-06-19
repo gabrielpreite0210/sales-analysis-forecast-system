@@ -10,17 +10,22 @@ An end-to-end data science and analytics project that:
 
 ## 📚 Table of Contents
 
-1. [Executive Business Insights](#executive-business-insights)  
-2. [System Architecture - Data Pipeline](#system-architecture---data-pipeline)  
+1. [Executive Business Insights](#-executive-business-insights)  
+2. [System Architecture - Data Pipeline](#-system-architecture---data-pipeline)  
 3. [Component Breakdown](#component---breakdown)  
    - [Data Engineering, ETL & EDA](#1-data-engineering-etl--eda)  
    - [SQL Analytics](#2-sql-analytics)  
    - [Statistical Analysis Framework](#3-statistical-analysis-framework)  
    - [Forecasting](#4-forecasting)  
-   - [Interactive Forecasting App (Gradio)](#5-interactive-forecasting-app-gradio--hugging-face-spaces)  
-   - [Business Intelligence Dashboard](#6-business-intelligence-dashboard)  
+   - [Interactive Forecasting App (Gradio)](#5--interactive-forecasting-app-gradio--hugging-face-space)  
+   - [Business Intelligence Dashboard](#6--business-intelligence-dashboard)  
    - [Dashboard Preview](#7-dashboard-preview)  
-4. [Quick Start & Installation](#quick-start--installation)
+4. [Quick Start & Installation](#-quick-start--installation)
+   - [Prerequisites](#1-prerequisites)
+   - [Environment Setup](#2-environment-setup)
+   - [Dependencies Installation](#3-dependencies-installation)
+   - [Run the Forecasting Web Application](#4-run-the-forecasting-web-application)
+   - [Database Setup (Optional)](#5-database-setup-optional)
 
 ---
 
