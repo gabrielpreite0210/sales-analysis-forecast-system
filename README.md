@@ -17,7 +17,7 @@ An end-to-end data science and analytics project that:
    - [SQL Analytics](#2-sql-analytics)  
    - [Statistical Analysis Framework](#3-statistical-analysis-framework)  
    - [Forecasting](#4-forecasting)  
-   - [Interactive Forecasting App (Gradio)](#5--interactive-forecasting-app-gradio--hugging-face-space)  
+   - [Interactive Forecasting App](#5--interactive-forecasting-app-gradio--hugging-face-spaces)  
    - [Business Intelligence Dashboard](#6--business-intelligence-dashboard)  
    - [Dashboard Preview](#7-dashboard-preview)  
 4. [Quick Start & Installation](#-quick-start--installation)
