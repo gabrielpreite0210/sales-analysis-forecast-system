@@ -1,6 +1,11 @@
 # Walmart Retail Analytics & Weekly Sales Forecasting System
 
-An end-to-end data science and analytics project that includes an interactive web application, processes retail sales data, performs statistical analysis and hypothesis testing, builds forecasting models for weekly demand, and provides interactive business intelligence dashboards for insights and decision-making.
+An end-to-end data science and analytics project that:
+- includes an interactive web application
+- processes retail sales data -> performs a structural and a statistical analysis
+- builds forecasting models for weekly demand
+- provides interactive business intelligence dashboards for insights and decision-making
+
 ---
 
 ## 📚 Table of Contents
@@ -53,6 +58,7 @@ graph TD
     H --> I[Key Findings]
     I --> J[Power BI Dashboard]
     J --> K[Business Report]
+```
 
 ---
 
