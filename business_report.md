@@ -38,6 +38,24 @@ Sales performance is not evenly distributed across the retail network.
 
 A small subset of stores contributes a big share of total revenue due to structural differences in scale and operational capacity.
 
+The table below shows the contribution of the top-performing stores and their cumulative impact on total sales.
+
+| Store | Total Sales | Contribution % | Cumulative % |
+|------|-------------|----------------|--------------|
+| 20 | 301,397,800 | 4.47% | 4.47% |
+| 4  | 299,544,000 | 4.45% | 8.92% |
+| 14 | 288,999,900 | 4.29% | 13.21% |
+| 13 | 286,517,700 | 4.25% | 17.46% |
+| 2  | 275,382,400 | 4.09% | 21.55% |
+| 10 | 271,617,700 | 4.03% | 25.58% |
+| 27 | 253,855,900 | 3.77% | 29.35% |
+| 6  | 223,756,100 | 3.32% | 32.67% |
+| 1  | 222,402,800 | 3.30% | 35.97% |
+| 39 | 207,445,500 | 3.08% | 39.05% |
+From: 'Cleaning-EDA-ETL.ipynb notebook'
+
+Top 10 stores -> 39.05% of total sales.
+
 However, store type effects are **not fully consistent across all analyses** (depending on the level of aggregation):
 
 - aggregate sales analyses suggest that Type A stores generate the highest overall revenue;
@@ -49,11 +67,11 @@ The discrepancy likely reflects structural differences in store scale (bigger si
 
 Across departments, sales are distributed across multiple categories rather than being dominated by a single department.
 
-Additionally, several high-performing stores combine:
+Additionally, a lot of high-performing stores combine:
 - high revenue
 - low volatility (stable performance)
 
-Operational consistency may contribute to sustained performance.
+--> Operational consistency may contribute to sustained performance.
 
 **Key takeaway:** performance depends on scale and operational consistency rather than a single dominant factor.
 
@@ -67,6 +85,8 @@ Seasonality is one of the strongest patterns in the dataset.
 - Strong peaks occur in **late November–December (Q4)**
 - Sharp decline follows in January
 - Mid-year (especially summer) tends to underperform
+
+![Seasonality](images\seasonality.png)
 
 **Important**:
 - the aggregated time series highlights January as the immediate post-holiday downturn following the Q4 sales peak. This difference arises because the time-series analysis emphasizes changes over time, whereas the regression compares each month directly against a fixed baseline.
@@ -87,6 +107,8 @@ Instead, they affect distribution:
 - Statistical significance exists, but effect size is very small (**Cohen’s d ≈ 0.05**)
 
 --> Holidays increase variability, not baseline demand.
+
+![Holiday vs No Holiday](images/holiday_vs_noholiday_boxplot.png)
 
 **Key takeaway:** holidays amplify peaks rather than raise overall sales.
 
@@ -171,7 +193,7 @@ Seasonality should be embedded into:
 
 # Final Considerations
 
-Retail demand is highly predictable at the macro level but complex at the micro level.
+Retail demand is predictable at the macro level but more complex at the micro level.
 
 The dominant forces are:
 
@@ -190,7 +212,6 @@ Interactive dashboard available here:
 👉 [View Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDJkYmU1NGMtYTFlMS00NDlmLTgyNjgtMGFjOGY1ZTVjOGU5IiwidCI6IjI2YjA4ZWFjLTU2ZmEtNDhjOC05NWQ0LTMwOWJhMWZiOGFlMSJ9)
 
 The dashboard includes:
-- Store performance KPIs
-- Department-level breakdown
-- Seasonal trends
-- Promotional analysis
+- executive overview
+- store-type analysis (performance & stability)
+- sales drivers & operational insights
