@@ -81,7 +81,6 @@ The system integrates three core data sources:
 
 #### Data integration & cleaning
 - Datasets are merged using sequential **left joins** on Store and Date to preserve all sales records while enriching them with contextual variables.
-- Markdown variables (MarkDown1–5) -> high missingness (≈64%–74%), missing values are imputed with 0, preserving natural sales distribution.
 
 ### EDA
 Key visualizations:
@@ -90,7 +89,7 @@ Key visualizations:
 - **Time-series plots** to analyze weekly sales trends and identify strong seasonal patterns (the Q4 peak and post-holiday decline).
 - **Boxplots** comparing holiday vs non-holiday sales distributions, highlighting similar medians but significantly higher outliers during holiday periods.
 - **DataFrame-Table** to identify the contribution of the top 10 performing stores and the holiday lift effect for the departments.
-- **Bar plots* showing holiday effect by store and department, sales concentration across top-performing departments.
+- **Bar plots** showing holiday effect by store and department, sales concentration across top-performing departments.
 - **Scatter plots** exploring relationships between sales and macroeconomic variables such as CPI, and unemployment.
 
 #### Feature engineering
